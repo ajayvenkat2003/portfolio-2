@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+    }
+
+    .container-own{
+        
+        padding-inline: 5rem;
+        margin:0;
+    }
+    .body{
+        background-color: rgb(0, 0, 12);
+        height: 88vh;
+        width: 100%;
+        margin-top: .5mm;
+        position: absolute;
+    }
+    .left-half{
+       
+       height: 100%;
+        width: 40%;
+        position:absolute;
+        transition: transform 2s;
+        transform-style: preserve-3d;
+    }
+    #front{
+      
+        height:100%;
+        width:100%;
+      position: absolute;
+       
+        backface-visibility: hidden;
+    }
+    .left-half:hover,#home:active .left-half{
+      cursor: cell;
+    }
+    #back-side{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        background-image: url("images/img3.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        
+    }
+    #name1{
+        -webkit-text-stroke:.5px rgb(238, 238, 247);
+        color:transparent;
+    
+     }
+    
+    #name2{
+        color: aqua;
+        animation:nameani linear infinite 4s;
+    }
+    #devel{
+       position: absolute;
+       font-size: 4rem;
+       letter-spacing: 2rem; 
+       right:0;
+       font-weight: bold;
+       -webkit-box-reflect: below 5px linear-gradient(transparent,black);
+       top:10rem;
+       right:5rem;
+       
+    }
+    #quote{
+        position:absolute;
+        bottom:15rem;
+        left:6rem;
+        animation:quoteani linear 6s;
+        font-size: 4rem;
+        font-weight: 900;
+        letter-spacing:4px;
+        text-transform: capitalize;
+        -webkit-text-stroke: 1px blue ;
+        
+
+    }
+    .content-text{
+    
+    right:0;
+    position: absolute;
+    letter-spacing: 7rem;
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+    @keyframes nameani {
+        0%,100%{
+          clip-path:polygon(0% 45%,15% 44%,32% 50%,54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,0% 100%) ; 
+          
+        }
+        
+        50%{
+            clip-path:polygon(0% 60%,16% 65%,32% 66%,51% 62%,67% 50%,84% 45%,100% 46%,100% 100%,0% 100%) ; 
+        }
+    }
+
+    @keyframes quoteani {
+        0%{
+            clip-path:polygon(0 0, 0 3%, 0 52%, 0 100%, 0 100%, 0 38%);
+            
+            
+        }
+        20%{
+            clip-path: polygon(0 0, 29% 0, 2% 50%, 33% 100%, 0 100%, 0% 50%);
+            
+        }
+        40%{
+            clip-path: polygon(0 0, 49% 0, 23% 48%, 42% 100%, 0 100%, 11% 41%);
+           
+        }
+        60%{
+            clip-path: polygon(0 0, 75% 0, 63% 54%, 69% 100%, 0 100%, 0 38%);
+            
+        }
+        100%{
+            clip-path: polygon(0 0, 100% 1%, 100% 49%, 100% 99%, 0 100%, 0 38%);
+         
+        }
+    }
+
+
+
+    .right-half{
+        position:absolute;
+        width:60%;
+        right:0;
+        top:0;
+        height:100%;
+        
+    }
+    .skillt {
+        position:absolute;
+        width: 50%;
+        left:0;
+        top:2rem;
+        padding-inline: 2rem;
+        
+    }
+    .skill{
+        border-radius: 20px;
+        width:80%;
+        padding: 2rem;
+        
+    }
+
+.skill :hover,.education :hover,.contact :hover{
+    text-shadow: 2px 3px 9px blue;
+    cursor: pointer;
+}
+
+
+    .skill ul{
+        list-style-type:none;
+    }
+    .skill ul li{
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+    .education{
+        padding-inline: 2rem;
+        position:absolute;
+        width: 50%;
+        right:2rem;
+        top:4rem;
+        border-radius:20px;
+        color:rgb(95, 91, 91)
+    }
+
+    
+    .contact{
+        position: absolute;
+        bottom:3rem;
+        right:3rem;
+        display: flex;
+        padding-inline:2rem;
+        border-radius:20px;
+        width:100%;
+        text-align: center;
+    }
+    .contact h5, .contact h6,.contact i{
+        margin:2rem;
+    }
+    .contact h6{
+        position :absolute;
+    right:1rem;
+    }
+    .sk,.education:hover,.skill:hover,.contact:hover{
+        color:blanchedalmond;
+        box-shadow: 4px 3px 10px rgb(118, 110, 138);
+        background-color:rgb(34, 13, 70) ;
+    }
+    
